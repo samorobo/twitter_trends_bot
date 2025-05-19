@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-05-19 09:11:25",
+  "country": "Global Trends",
+  "trends": [
+    {
+      "name": "#TheLastOfUs",
+      "image_url": "https://st1.latestly.com/wp-content/uploads/2025/02/79-154-380x214.jpg"
+    },
+    {
+      "name": "#BaddiesAfrica",
+      "image_url": "https://i.ytimg.com/vi/P02kr2AXe7U/mqdefault.jpg"
+    },
+    {
+      "name": "Plevna",
+      "image_url": "https://www.falloncountytimes.com/wp-content/uploads/PDF/2022-04-29/f638302328109e22e6891f75e14dd83e.0.300-300x300.png"
+    },
+    {
+      "name": "#AmericanIdol",
+      "image_url": "https://hollywoodlife.com/wp-content/uploads/2023/07/american-idol-season-22-abc-ftr.jpg?resize=384%2C216"
+    },
+    {
+      "name": "Joel",
+      "image_url": "https://cf-img-a-in.tosshub.com/lingo/stak/images/story/202503/67c254c05bba2-joel-embiid-in-the-frame-012842457-16x9.png?size=280:180"
+    }
+  ]
+}
