@@ -8,6 +8,10 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def get_nigeria_trends():
     """
@@ -194,13 +198,15 @@ def main():
     """
     print("Starting Nigeria Twitter Trends Bot...")
     
-    # You would need to get these from Google Cloud Console:
-    # 1. Create a project
-    # 2. Enable Custom Search API
-    # 3. Create API credentials
-    # 4. Create a programmable search engine at https://programmablesearchengine.google.com/
-    GOOGLE_API_KEY = "AIzaSyDvjntQ5rmXNUsuaHFuDSuB-caN-H0AR1Y"
-    GOOGLE_CX_ID = "230ab240e4d9f49e5"
+    # Get API key and CX ID from environment variables
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+    GOOGLE_CX_ID = os.getenv("GOOGLE_CX_ID")
+    
+    # Check if environment variables are set
+    if not GOOGLE_API_KEY or not GOOGLE_CX_ID:
+        print("Error: API key or CX ID not found in environment variables.")
+        print("Please create a .env file with GOOGLE_API_KEY and GOOGLE_CX_ID variables.")
+        return
     
     # Get trending topics
     trends = get_nigeria_trends()
